@@ -1,0 +1,33 @@
+.background{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 215, 215);
+    font-family: sans-serif;
+}
+.main-box{
+    background-color: rgb(255, 72, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 0px;
+    border: 1px solid rgb(175, 149, 149);
+    border-radius: 8px;
+    width: 35%;
+    text-align: center;
+    padding-bottom: 0;
+}
+h1{
+    margin-bottom: 12px;
+    margin-top: 13px;
+    font-size: 26px;
+}
+h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.textarea{
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+}

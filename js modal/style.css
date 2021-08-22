@@ -1,0 +1,97 @@
+:root{
+    --color: rgb(228, 84, 84);
+    --duration: 1s;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: blanchedalmond;
+}
+
+#showBtn{
+    background-color: var(--color);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+#showBtn:hover{
+    color:#000;
+}
+
+#background{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    background-color: rgba(141, 173, 238, 0.5);
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#modal-body{
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
+                0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--duration);
+}
+
+#header h2, #footer h3{
+    margin: 0;
+}
+
+#header{
+    padding: 15px;
+    background-color: var(--color);
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#body{
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+#close{
+    color: #fff;
+    float: right;
+    font-size: 30px;
+}
+
+#close:hover,
+#close:focus{
+    color: #000;
+    cursor: pointer;
+}
+
+#footer{
+    padding: 10px;
+    color: #fff;
+    background-color: var(--color);
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@keyframes modalopen{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
