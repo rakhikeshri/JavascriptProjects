@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="h2">ToDo List</h2>
+        <div class="form">
+            <label for="title" id="titleLabel">Title : </label>
+            <input type="text" class="title" id="title" placeholder=" enter todo's title here"><br />
+            <small id="titlesmall" class="small">Add an item to the list</small>
+        </div>
+        <br />
+        <div class="form">
+            <label for="description" id="descLabel">Description : </label>
+            <textarea id="description" rows="3" placeholder=" enter todo's description here"></textarea>
+            <small id="titlesmall" class="small">Add description of the list item.</small>
+        </div>
+        <br />
+        <button class="btn" id="add">Add to list</button>
+        <button id="clear" class="btn" onclick="clearStorage()">Clear list</button>
+        <div id="items">
+            <h2 class="itemstable">Your Items</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Item Title</th>
+                        <th>Item Discription</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+                    <tr>
+                        <th>1</th>
+                        <td> Get Some Coffee</td>
+                        <td> your conern</td>
+                        <td> <button class="dlt">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

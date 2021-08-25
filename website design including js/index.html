@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Foods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">GOOD<span>FOODS</span></a>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span class="menuIcon"></span>
+        </header>
+        <div class="content">
+            <div class="bannerText" id="slideshowText">
+                <div class="active">
+                    <h2>EAT HEALTHY!<BR />STAY HEALTHY</h2>
+                    <p>A healthy diet gives the right nourishment to the body,
+                         the right amount of energy to meet the daily needs.
+                          The unnecessary carbohydrates are avoided and the right amount of energy, 
+                        freshness and nutrients keeps the cells of the body happy.
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div>
+                    <h2>EAT YOUR<BR />VEGGIES</h2>
+                    <p>Green vegetables may be the closest thing to a magic food. Green vegetables, 
+                        and really almost all vegetables, can help you lose weight, reduce your risk of cancer, 
+                        make you look better and feel better. Ensuring you get enough of these nutritional 
+                        gems is paramount. Be conscious of what you put in your mouth and always 
+                        strive for naturally-occurring foods over the processed alternatives.
+                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div>
+                    <h2>GOOD FOOD!<BR />GOOD MOOD</h2>
+                    <p>"Considering that our brain and body function due to the food we ingest, 
+                        metabolize, and reallocate within ourselves," she said, "it makes perfect 
+                        sense that what we eat also must influence our biochemistry, 
+                        which is a substantial part of mental health."                    </p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+            <div class="bannerImg" id="slideshow">
+                <img src="food1.jpg" class="active">
+                <img src="food2.jpg">
+                <img src="food3.jpg">
+            </div>
+        </div>
+        <div class="icons">
+            <ul class="iconweb">
+                <li><a href="#"><img src="facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="insta.png" alt=""></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            </ul>
+            <ul class="controls">
+                <li><div><img src="prev.png" onclick="prevSlide(); prevSlideText();"></div></li>
+                <li><div><img src="next.png" onclick="nextSlide(); nextSlideText();"></div></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let slideshow = document.getElementById('slideshow');
+        let slides = slideshow.getElementsByTagName('img');
+        index = 0;
+        function prevSlide(){
+            slides[index].classList.remove('active');
+            index = (index-1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+        function nextSlide(){
+            slides[index].classList.remove('active');
+            index = (index+1) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+        let slideshowText = document.getElementById('slideshowText');
+        let slidesText = slideshowText.getElementsByTagName('div');
+        i = 0;
+        function prevSlideText(){
+            slidesText[i].classList.remove('active');
+            i = (i-1 + slidesText.length) % slidesText.length;
+            slidesText[i].classList.add('active');
+        }
+        function nextSlideText(){
+            slidesText[i].classList.remove('active');
+            i = (i+1) % slidesText.length;
+            slidesText[i].classList.add('active');
+        }
+    </script>
+</body>
+</html>

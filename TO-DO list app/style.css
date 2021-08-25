@@ -1,0 +1,80 @@
+
+.container{
+    margin: 50px ;
+    padding: 0 50px 50px 50px;
+    /* text-align: center; */
+    /* border: 2px solid black; */
+}
+.h2{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(145, 6, 75);
+}
+#titleLabel{
+    font-size: 35px;
+    padding: 85px 112px 85px 85px;
+
+}
+#descLabel{
+    font-size: 35px;
+    padding: 88px;
+
+}
+input{
+    border: 2px solid black;
+    width: 520px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 77px;
+}
+small{
+    font-size: 20px;
+    margin:  368px;
+}
+textarea{
+    border: 2px solid black;
+    font-size: 25px;
+    /* padding: 10px; */
+    margin: 0 px;
+    width: 533px;
+    border-radius: 10px;
+}
+#add{
+    margin:0 0 0 370px;
+    font-size: 20px;
+    background-color: rgb(70, 70, 180);
+    color: white;
+    padding: 4px 8px;
+}
+#clear{    
+    font-size: 20px;
+    background-color: rgb(70, 70, 180);
+    color: white;
+    padding: 4px 8px;
+}
+#items{
+    text-align: center;
+    font-size: 30px;
+    margin: 0 12 0px;
+    color: rgb(19, 14, 14);
+
+}
+table{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: auto;
+    padding: 0 20px;
+    color: black;
+    font-size: 30px;
+}
+thead{
+    text-decoration: underline;
+}
+.dlt{
+    /* margin:0 0 0 370px; */
+    font-size: 20px;
+    background-color: rgb(70, 70, 180);
+    color: white;
+    padding: 4px 8px;
+}
